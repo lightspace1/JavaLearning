@@ -19,5 +19,9 @@ public class LearnJedisPoll {
         // use the connection
         jedis.set("pooltest", "confirm");
         jedis.close();
+
+        Jedis jedis2 = JedisPoolUtils.getJedis();
+        System.out.println(jedis2.get("pooltest"));
+        jedis2.close();
     }
 }
