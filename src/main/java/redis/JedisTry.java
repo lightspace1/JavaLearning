@@ -2,6 +2,7 @@ package redis;
 
 import redis.clients.jedis.Jedis;
 
+import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
@@ -27,6 +28,23 @@ public class JedisTry {
             String value = user.get(key);
             System.out.println(key + ":" + value);
         }
+
+        //test the list
+        jedis.lpush("thelist", "a", "b", "c");
+        jedis.rpush("thelist", "a","b","c");
+        List<String> thelist = jedis.lrange("thelist", 0 , -1);
+
+        String element1 = jedis.lpop("thelist");
+        System.out.println(element1);
+        String element2 = jedis.rpop("thelist");
+        System.out.println(element2);
+
+        //retrieve the element by scope
+        List<String> thelist2 = jedis.lrange("thelist", 0, -1);
+        System.out.println(thelist2);
+
+
+
 
         jedis.close();
     }
