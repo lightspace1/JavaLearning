@@ -44,6 +44,20 @@ public class JedisTry {
         System.out.println(thelist2);
 
 
+        //test the set
+        jedis.sadd("theSet", "java", "PHP", "C++");
+        Set<String> theSet = jedis.smembers("theSet");
+        System.out.println(theSet);
+
+        // test the sort Set
+        jedis.zadd("thesortedset", 3, "a");
+        jedis.zadd("thesortedset", 30, "b");
+        jedis.zadd("thesortedset",55, "c");
+
+        //get the elements in the set
+        Set<String> thesortedset = jedis.zrange("thesortedset", 0, -1);
+        System.out.println(thesortedset);
+
 
 
         jedis.close();
