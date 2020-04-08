@@ -1,5 +1,6 @@
 package redis.demo.web.servlet;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import redis.demo.domain.Province;
 import redis.demo.service.ProvinceService;
@@ -15,24 +16,32 @@ import java.util.List;
 
 @WebServlet(urlPatterns = {"/provinceServlet"} )
 public class ProvinceServlet extends HttpServlet {
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) {
         // use service to check the result
 
         ProvinceService service = new ProvinceServiceImpl();
-        List<Province> list = service.findAll();
+        String json = null;
+        try {
+            json = service.findAllJson();
+        } catch (JsonProcessingException e) {
+            e.printStackTrace();
+        }
         //serialize the list to json
-        ObjectMapper mapper = new ObjectMapper();
-        String json = mapper.writeValueAsString(list);
+//        ObjectMapper mapper = new ObjectMapper();
+//        String json = mapper.writeValueAsString(list);
         System.out.println(json);
         //response result
         response.setContentType("application/json;charset=utf-8");
-        response.getWriter()   .write(json);
-
+        try {
+            response.getWriter().write(json);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 
 
     }
 
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) {
         doPost(request, response);
     }
 }

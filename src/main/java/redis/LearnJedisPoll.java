@@ -3,6 +3,7 @@ package redis;
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisPool;
 import redis.clients.jedis.JedisPoolConfig;
+import redis.demo.util.JedisPoolUtils;
 
 public class LearnJedisPoll {
     public static void main(String[] args) {

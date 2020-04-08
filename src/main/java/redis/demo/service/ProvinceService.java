@@ -1,9 +1,11 @@
 package redis.demo.service;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
 import redis.demo.domain.Province;
 
 import java.util.List;
 
 public interface ProvinceService {
-    public List<Province> findAll();
+    List<Province> findAll();
+    String findAllJson() throws JsonProcessingException;
 }

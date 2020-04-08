@@ -1,10 +1,9 @@
-package redis;
+package redis.demo.util;
 
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisPool;
 import redis.clients.jedis.JedisPoolConfig;
 
-import java.io.IOError;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
