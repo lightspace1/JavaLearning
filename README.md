@@ -1,2 +1,2 @@
 # JavaLearning
-The record of Java Learning
+Java Learning Record
