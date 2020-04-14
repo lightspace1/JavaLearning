@@ -5,3 +5,5 @@
 0:0:0:0:0:0:0:1 - - [13/Apr/2020:22:54:23 -0500] "GET /favicon.ico HTTP/1.1" 404 - http-bio-8888-exec-4 0
 0:0:0:0:0:0:0:1 - - [13/Apr/2020:23:02:58 -0500] "GET /maven_web HTTP/1.1" 302 - http-bio-8888-exec-1 0
 0:0:0:0:0:0:0:1 - - [13/Apr/2020:23:02:58 -0500] "GET /maven_web/ HTTP/1.1" 200 52 http-bio-8888-exec-3 50
+0:0:0:0:0:0:0:1 - - [13/Apr/2020:23:37:22 -0500] "GET /maven_web HTTP/1.1" 302 - http-bio-8888-exec-1 0
+0:0:0:0:0:0:0:1 - - [13/Apr/2020:23:37:22 -0500] "GET /maven_web/ HTTP/1.1" 200 52 http-bio-8888-exec-3 49
