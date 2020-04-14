@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="292c9258-85f0-475c-943c-564ad63d32fd" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="/usr/share/maven" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1aVs2tshmqkIzFxLnXNjtRGuX5v" />
+  <component name="ProjectViewState">
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../untitled1" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.3721643" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn tomcat:run" />
+      <command value="mvn tomcat7:run" />
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="292c9258-85f0-475c-943c-564ad63d32fd" name="Default Changelist" comment="" />
+      <created>1586831891668</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1586831891668</updated>
+      <workItem from="1586831894004" duration="3810000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="649" y="206" key="#Project_Structure" timestamp="1586831963715">
+      <screen x="0" y="0" width="1920" height="1044" />
+    </state>
+    <state x="649" y="206" key="#Project_Structure/0.0.1920.1044@0.0.1920.1044" timestamp="1586831963715" />
+    <state x="470" y="140" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586834363488">
+      <screen x="0" y="0" width="1920" height="1044" />
+    </state>
+    <state x="470" y="140" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1044@0.0.1920.1044" timestamp="1586834363488" />
+    <state x="853" y="110" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog" timestamp="1586832423286">
+      <screen x="0" y="0" width="1920" height="1044" />
+    </state>
+    <state x="853" y="110" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog/0.0.1920.1044@0.0.1920.1044" timestamp="1586832423286" />
+    <state x="641" y="255" key="FileChooserDialogImpl" timestamp="1586835702881">
+      <screen x="0" y="0" width="1920" height="1044" />
+    </state>
+    <state x="641" y="255" key="FileChooserDialogImpl/0.0.1920.1044@0.0.1920.1044" timestamp="1586835702881" />
+    <state x="720" y="394" key="Github.ShareDialog" timestamp="1586835680361">
+      <screen x="0" y="0" width="1920" height="1044" />
+    </state>
+    <state x="720" y="394" key="Github.ShareDialog/0.0.1920.1044@0.0.1920.1044" timestamp="1586835680361" />
+    <state width="1572" height="350" key="GridCell.Tab.0.bottom" timestamp="1586835704285">
+      <screen x="0" y="0" width="1920" height="1044" />
+    </state>
+    <state width="1572" height="350" key="GridCell.Tab.0.bottom/0.0.1920.1044@0.0.1920.1044" timestamp="1586835704285" />
+    <state width="1572" height="350" key="GridCell.Tab.0.center" timestamp="1586835704283">
+      <screen x="0" y="0" width="1920" height="1044" />
+    </state>
+    <state width="1572" height="350" key="GridCell.Tab.0.center/0.0.1920.1044@0.0.1920.1044" timestamp="1586835704283" />
+    <state width="1572" height="350" key="GridCell.Tab.0.left" timestamp="1586835704282">
+      <screen x="0" y="0" width="1920" height="1044" />
+    </state>
+    <state width="1572" height="350" key="GridCell.Tab.0.left/0.0.1920.1044@0.0.1920.1044" timestamp="1586835704282" />
+    <state width="1572" height="350" key="GridCell.Tab.0.right" timestamp="1586835704284">
+      <screen x="0" y="0" width="1920" height="1044" />
+    </state>
+    <state width="1572" height="350" key="GridCell.Tab.0.right/0.0.1920.1044@0.0.1920.1044" timestamp="1586835704284" />
+    <state x="511" y="51" key="SettingsEditor" timestamp="1586832490490">
+      <screen x="0" y="0" width="1920" height="1044" />
+    </state>
+    <state x="511" y="51" key="SettingsEditor/0.0.1920.1044@0.0.1920.1044" timestamp="1586832490490" />
+    <state x="918" y="226" width="672" height="677" key="run.anything.popup" timestamp="1586834797455">
+      <screen x="0" y="0" width="1920" height="1044" />
+    </state>
+    <state x="918" y="226" width="672" height="677" key="run.anything.popup/0.0.1920.1044@0.0.1920.1044" timestamp="1586834797455" />
+  </component>
+</project>
