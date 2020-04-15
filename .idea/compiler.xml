@@ -6,8 +6,9 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="maven_web" />
         <module name="untitled2" />
+        <module name="mybatis" />
+        <module name="maven_web" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
