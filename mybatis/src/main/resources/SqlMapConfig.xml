@@ -16,6 +16,6 @@
         </environment>
     </environments>
     <mappers>
-        <mapper resource="com/lightspace/dao/IUserDao.xml"></mapper>
+        <mapper class="com.lightspace.dao.IUserDao"></mapper>
     </mappers>
 </configuration>
