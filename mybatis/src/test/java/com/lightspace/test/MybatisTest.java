@@ -1,6 +1,7 @@
 package com.lightspace.test;
 
 import com.lightspace.dao.IUserDao;
+import com.lightspace.dao.impl.UserDaoImpl;
 import com.lightspace.domain.User;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
@@ -21,9 +22,9 @@ public class MybatisTest {
         SqlSessionFactoryBuilder builder = new SqlSessionFactoryBuilder();
         SqlSessionFactory factory = builder.build(in);
         //3. create object
-        SqlSession session = factory.openSession();
+        //SqlSession session = factory.openSession();
         //4. create Dao proxy object
-        IUserDao userDao = session.getMapper(IUserDao.class);
+        IUserDao userDao = new UserDaoImpl(factory);
         //5. execute
         List<User> users = userDao.findAll();
         for(User user : users) {
@@ -31,7 +32,7 @@ public class MybatisTest {
         }
 
         //6  release resource
-        session.close();
+
         in.close();
 
 
