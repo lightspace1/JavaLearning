@@ -18,4 +18,11 @@ public class UserDaoImpl implements IUserDao {
         List<User> users = session.selectList("com.lightspace.dao.IUserDao.findAll");
         return users;
     }
+
+    @Override
+    public void saveUser(User user) {
+
+    }
+
+
 }
