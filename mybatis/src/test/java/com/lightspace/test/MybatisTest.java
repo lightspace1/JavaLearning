@@ -69,7 +69,7 @@ public class MybatisTest {
     public void testUpdate() {
         User user = new User();
         user.setId(50);
-        user.setUsername();
+
 
     }
 }
