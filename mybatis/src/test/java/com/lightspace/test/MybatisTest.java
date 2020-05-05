@@ -1,7 +1,7 @@
 package com.lightspace.test;
 
 import com.lightspace.dao.IUserDao;
-import com.lightspace.dao.impl.UserDaoImpl;
+import com.lightspace.domain.QueryVo;
 import com.lightspace.domain.User;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
@@ -11,8 +11,11 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
+
 import java.io.IOException;
 import java.io.InputStream;
+
+
 import java.util.Date;
 import java.util.List;
 
@@ -69,6 +72,42 @@ public class MybatisTest {
     public void testUpdate() {
         User user = new User();
         user.setId(50);
+        user.setUsername("mybatis");
+        user.setAddress("aa");
+        user.setSex("male");
+        user.setBirthday(new Date());
+        userDao.updateUser(user);
+
+
+    }
+
+    @Test
+    public void testFindOne() {
+
+        User user = userDao.findById(1);
+        System.out.println(user);
+
+    }
+    @Test
+    public void testFindByName() {
+
+        List<User> users = userDao.findByName("%cc%");
+        for (User user : users) {
+            System.out.println(user);
+        }
+
+
+    }
+    @Test
+    public void testFindByVo() {
+        QueryVo vo = new QueryVo();
+        User user = new User();
+        user.setUsername("%cc%");
+        List<User> users = userDao.findUserByvo(vo);
+        vo.setUser(user);
+        for (User u : users) {
+            System.out.println(u);
+        }
 
 
     }
