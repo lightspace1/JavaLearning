@@ -19,4 +19,6 @@ public interface IUserDao {
     List<User> findByName(String name);
 
     List<User> findUserByvo(QueryVo vo);
+
+    List<User> findUserByCondition(User user);
 }

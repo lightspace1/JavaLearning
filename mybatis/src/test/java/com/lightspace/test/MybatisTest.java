@@ -115,4 +115,18 @@ public class MybatisTest {
 
 
     }
+    @Test
+    public void testFindByCondition(){
+        //1. read configuration file
+
+        //5. execute
+        User u = new User();
+        u.setUsername("aa");
+        List<User> users = userDao.findUserByCondition(u);
+        for(User user : users) {
+            System.out.println(user);
+        }
+
+        //6  release resource
+    }
 }
