@@ -1,6 +1,18 @@
 package com.lightspace.domain;
 
+import java.util.List;
+
 public class QueryVo {
+    public List<Integer> getIds() {
+        return ids;
+    }
+
+    public void setIds(List<Integer> ids) {
+        this.ids = ids;
+    }
+
+    private List<Integer> ids;
+
     public User getUser() {
         return user;
     }

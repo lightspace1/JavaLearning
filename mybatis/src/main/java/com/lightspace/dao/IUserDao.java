@@ -21,4 +21,5 @@ public interface IUserDao {
     List<User> findUserByvo(QueryVo vo);
 
     List<User> findUserByCondition(User user);
+    List<User> findUserIds(QueryVo vo);
 }

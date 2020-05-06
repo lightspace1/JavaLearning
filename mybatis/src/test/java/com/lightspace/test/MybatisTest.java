@@ -17,6 +17,7 @@ import java.io.IOException;
 import java.io.InputStream;
 
 
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -123,6 +124,26 @@ public class MybatisTest {
         User u = new User();
         u.setUsername("aa");
         List<User> users = userDao.findUserByCondition(u);
+        for(User user : users) {
+            System.out.println(user);
+        }
+
+        //6  release resource
+    }
+
+    @Test
+    public void testFindInIds(){
+        //1. read configuration file
+        QueryVo vo = new QueryVo();
+        List<Integer> list = new ArrayList<>();
+        list.add(11);
+        list.add(12);
+        list.add(13);
+        vo.setIds(list);
+        //5. execute
+        User u = new User();
+        u.setUsername("aa");
+        List<User> users = userDao.findUserIds(vo);
         for(User user : users) {
             System.out.println(user);
         }
