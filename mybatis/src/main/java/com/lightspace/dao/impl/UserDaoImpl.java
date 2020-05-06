@@ -52,4 +52,14 @@ public class UserDaoImpl implements IUserDao {
         return null;
     }
 
+    @Override
+    public List<User> findUserByCondition(User user) {
+        return null;
+    }
+
+    @Override
+    public List<User> findUserIds(QueryVo vo) {
+        return null;
+    }
+
 }

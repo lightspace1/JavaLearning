@@ -34,10 +34,10 @@ public class MybatisTest {
         SqlSessionFactoryBuilder builder = new SqlSessionFactoryBuilder();
         SqlSessionFactory factory = builder.build(in);
         //3. create object
-        //sqlSession = factory.openSession();
+        sqlSession = factory.openSession();
         //4. create Dao proxy object
-        //userDao = sqlSession.getMapper(IUserDao.class);
-        userDao = new UserDaoImpl(factory);
+        userDao = sqlSession.getMapper(IUserDao.class);
+        //userDao = new UserDaoImpl(factory);
     }
 
     @After
